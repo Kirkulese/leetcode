@@ -23,7 +23,7 @@ var deepestLeavesSum = function(root) {
         
         let currLength = queue.length
         
-        for(let i = 0; i<queue.length; i++){
+        for(let i = 0; i<currLength; i++){
             currSum += queue[i].val
             if(queue[i].left){
                 nextQ.push(queue[i].left)
